@@ -26,3 +26,89 @@ html{
     padding: 1.4rem 7%;
     border-bottom: .1rem solid #eee;
 }
+
+.header-top .social a{
+    font-size: 1.2rem;
+    padding: .5rem;
+    margin-left: .25rem;
+    background: #248277;
+    border-radius: .5rem;
+    color: #fff;
+}
+
+#menu{
+    font-size: 2.5rem;
+    color: #248277;
+    border: .1rem solid #248277;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.header-top .logo{
+    color: #248277;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.header-top .logo i{
+    padding-right: .5rem;
+    color: #222;
+}
+
+.header-top .icons .action-btn{
+    position: relative;
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    padding: .5rem;
+    background: #fff;
+}
+
+.header-top .icons .action-btn a{
+    color: #fff;
+    -webkit-text-stroke: .1rem #222;
+}
+
+.header-top .icons .action-btn a:hover{
+    -webkit-text-stroke: .1rem #248277;
+}
+
+.header-top .icons .action-btn .count{
+    position: absolute;
+    top: -.3rem;
+    right: -.2rem;
+    background: #248277;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1;
+    padding: .2rem .4rem;
+    border-radius: 50%;
+}
+
+/* header-main */
+
+.header-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 7%;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header-main .navbar a{
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: #222;
+}
+
+.header-main .navbar a:hover{
+    color: #248277;
+}
+
+/* end */
+
+/* home */
+ 
