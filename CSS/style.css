@@ -17,6 +17,27 @@ html{
     scroll-padding-top: 7rem;
 }
 
+section{
+    padding: 2rem 7%;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #248277;
+    border: .1rem solid #248277;
+    background: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: #fff;
+    background: #248277;
+}
+
 /* headertop */
 
 .header-top{
@@ -111,4 +132,61 @@ html{
 /* end */
 
 /* home */
+
+.home{
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/home2.jpg) no-repeat;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.home .content{
+    max-width: 55rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #248277;
+}
  
+.home .content p{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #248277;
+    padding: 1rem 0;
+}
+
+/* en */
+
+/* banner */
+
+.banner-container{
+    display: grid;
+    padding: 2rem 3%;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.banner-container .banner{
+    height: 45rem;
+    overflow: hidden;  
+}
+
+.banner-container .banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-container .banner:hover img{
+    transform: scale(1.2);
+}
+
+.banner-container .banner .content{
+    position: absolute;
+    top: 25%;
+    left: 3rem;
+    transform: translateY(-50%);
+}
