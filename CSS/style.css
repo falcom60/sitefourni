@@ -316,3 +316,126 @@ section{
 /* end */
 
 /* products */
+
+.product .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.product .box-container .box{
+    background: #f0f8f7;
+    padding: 3rem 2rem;
+    text-align: center;
+    outline: .2rem solid transparent;
+    transition: .25s ease;
+}
+
+.product .box-container .box:is(:hover, :focus-within){
+    outline-color: #248277;
+}
+
+.product .box-container .box .cardbanner{
+    position: relative;
+    margin-block-end: 2rem;
+}
+
+.product .box-container .box .cardbanner img{
+    transition: .25s ease;
+}
+
+.product .box-container .box:is(:hover, :focus-within) .cardbanner img{
+    opacity: 0.6s;
+} 
+
+.product .box-container .box .btn-wrapper{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product .box-container .box .btn-wrapper .product-btn{
+    position: relative;
+    background: #248277;
+    font-size: 2rem;
+    color: #fff;
+    padding: 1.2rem 1.4rem;
+    border-radius: 50%;
+    transition: .25s ease;
+    opacity: 0;
+}
+
+.tooltip{
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: .4rem;
+    font-size: 1.4rem;
+    min-width: max-content;
+    padding: .4rem 1.2rem;
+    pointer-events: none;
+    opacity: var(--opacity, 0);
+    transition: .25s ease;
+}
+
+.tooltip::after{
+    content: "";
+    position: absolute;
+    top: 2rem; left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    border: 5px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.9);
+    border-right-color: rgba(0, 0, 0, 0.9);
+}
+
+.product .box-container .box:is(:hover, :focus-within) .btn-wrapper .product-btn{
+    opacity: 1;
+}
+
+.product .box-container .box .product-btn:is(:hover, :focus-within){
+    background: #1e272e;
+}
+
+.product .box-container .box .product-btn:is(:hover, :focus-within) .tooltip{
+    --opacity:1;
+}
+
+.product .box-container .box .card-content .rating-wrapper{
+    margin-bottom: .8rem;
+}
+
+.product .box-container .box .card-content .rating-wrapper .fas{
+    font-size: 1.7rem;
+    color: gold;
+}
+
+.product .box-container .box .card-content h3{
+    color: #248277;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.product .box-container .box .price-wrapper{
+    font-size: 1.5rem;
+    margin: .8rem 0;
+}
+
+.product .box-container .box .price-wrapper .del{
+    color: #777;
+    text-decoration: line-through;
+}
+
+.product .box-container .box .price-wrapper .price{
+    color: #248277;
+    margin-inline-start: .4rem;
+}
+
+.product .box-container .box .btn{
+    padding: .9rem 1.6rem;
+}
+
