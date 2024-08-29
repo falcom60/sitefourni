@@ -12,7 +12,7 @@
 
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
 }
@@ -438,4 +438,8 @@ section{
 .product .box-container .box .btn{
     padding: .9rem 1.6rem;
 }
+
+/* end */
+
+/* 
 
